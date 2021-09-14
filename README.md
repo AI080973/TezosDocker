@@ -18,7 +18,7 @@ docker build -t tezos:lastest .
 
 #### Step 1: Download FULL Testnet [snapshot](https://snapshots-tezos.giganode.io/) File
 
-#### Step 2: Copy the file snapshot-testnet.full into container.
+#### Step 2: Copy the snapshot-testnet.full file into container.
 	
 #### Step 3: RUN clear command(This command will remove all blockchain data.)
 	
@@ -30,4 +30,5 @@ tezos clear
 	
 ```
 tezos snapshot import <FULLPATH>/snapshot.full
+
 ```
