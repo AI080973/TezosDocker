@@ -1,6 +1,6 @@
-# TezosNode-client
+# Tezos Docker
 
-## How to run
+## Running
 
 ### Download Dockerfile
 
