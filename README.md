@@ -16,9 +16,7 @@ docker build -t tezos:lastest .
 
 ### Importing a snapshot
 
-#### Step 1: Download FULL Testnet snapshot File
-
-##### <https://snapshots-tezos.giganode.io/>
+#### Step 1: Download FULL Testnet [snapshot](https://snapshots-tezos.giganode.io/) File
 
 #### Step 2: Copy the file snapshot-testnet.full into container.
 	
