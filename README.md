@@ -16,14 +16,16 @@ docker build -t tezos:lastest .
 
 ### Importing a snapshot
 
-    ####Step 1: Copy the file snapshot-testnet.full into container.
+    #### Step 1: Copy the file snapshot-testnet.full into container.
 	
-	####Step 2: RUN clear command(This command will remove all blockchain data.)
+	#### Step 2: RUN clear command(This command will remove all blockchain data.)
+	
 	```
 	tezos clear
 	```
 	
-	####Step 3: RUN snapshot command
+	#### Step 3: RUN snapshot command
+	
 	```
 	tezos snapshot import <FULLPATH>/snapshot.full
 	```
