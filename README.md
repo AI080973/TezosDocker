@@ -1,6 +1,23 @@
 # Tezos Docker
 
-## Running
+## Running on Ubuntu
+
+### Install Package
+
+```
+sudo add-apt-repository ppa:serokell/tezos && sudo apt-get update
+sudo apt-get install -y tezos-client
+sudo apt-get install -y tezos-node
+sudo apt-get install -y tezos-baker-011-pthangz2
+sudo apt-get install -y tezos-endorser-011-pthangz2
+sudo apt-get install -y tezos-accuser-011-pthangz2
+```
+
+
+
+## Running on Docker
+
+
 
 ### Download Dockerfile
 
@@ -36,18 +53,28 @@ tezos-node snapshot import <FULLPATH>/snapshot.full
 
 ```
 
-## Command
-
-### Run Tezos-node in Granadanet
+## Building Net(Test Net)
 
 ```
-tezos-node run --data-dir ~/tezos-granadanet --rpc-addr 127.0.0.1
+tezos-node config init --data-dir ~/tezos-hangzhounet --network hangzhounet
+tezos-node identity generate --data-dir ~/tezos-hangzhounet
+tezos-node run --data-dir ~/tezos-hangzhounet
+```
+
+
+
+
+## Command
+
+### Run Tezos-node in Hangzhounet
+
+```
+tezos-node run --data-dir ~/tezos-hangzhounet --rpc-addr 127.0.0.1
 ```
 
 ### Activate Account
 
 ```
-tezos-client activate account bob with tz1ZQYMDETodNBAc2XVbhZFGme8KniuPqrSw.json
-BOB_ADDRESS="tz1ZQYMDETodNBAc2XVbhZFGme8KniuPqrSw"
-tezos-client get balance for $BOB_ADDRESS
+tezos-client activate account faucet with /tmp/hangzhounet.json
+tezos-client get balance for tz1xxxxxxxxxxxxxxxxx
 ```
