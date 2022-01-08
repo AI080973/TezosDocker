@@ -78,3 +78,11 @@ tezos-node run --data-dir ~/tezos-hangzhounet --rpc-addr 127.0.0.1
 tezos-client activate account faucet with /tmp/hangzhounet.json
 tezos-client get balance for tz1xxxxxxxxxxxxxxxxx
 ```
+
+## error
+
+### Unable to connect to the node: "resolution failed: unknown scheme"
+
+#### Try [This](https://gitlab.com/tezos/tezos/-/issues/634) them restart shell.
+
+#### Or Try[This](https://www.reddit.com/r/tezos/comments/a6h7or/issue_with_tezos_client/) them restart shell.
