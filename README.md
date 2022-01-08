@@ -74,10 +74,12 @@ tezos-node run --data-dir ~/tezos-hangzhounet --rpc-addr 127.0.0.1
 
 ### Activate Account
 
-```
+#### [https://teztnets.xyz/](https://teztnets.xyz/)
+
 tezos-client activate account faucet with /tmp/hangzhounet.json
 tezos-client get balance for tz1xxxxxxxxxxxxxxxxx
 ```
+
 
 ## error
 
